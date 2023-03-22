@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration page</title>
+        <link rel="stylesheet" href="registration.css">
+        <script type="text/javascript" src="registration.js"></script>
+    </head>
+    <body style="margin: 0;padding: 0;font-family: 'poppins',sans-serif;">
+        <section>
+        <div class="regform-box">
+            <h2>Registration</h2>
+            <div class="regform-value">
+                <form name="registrationform" onsubmit="return validateform()">
+                    <div class="left" name="left-div">
+                        <div class="inputbox">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" name="username" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" required>
+                            <label>Confirm Password</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="inputbox">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                            <input type="tel" required>
+                            <label>Mobile</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="today-outline"></ion-icon>
+                            <input type="date" required>
+                            <label>Date of Birth</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <input type="text" required>
+                            <label>Address</label>
+                        </div>
+                        <div class="geninputbox">
+                            <ion-icon name="man-outline"></ion-icon>
+                            <input type = "radio" name="gender" style="margin: 19px 0 ; margin-left: 4px;" required>
+                            <label class="category">Male</label>
+                            <ion-icon name="woman-outline"></ion-icon>
+                            <input type = "radio" name="gender" required>
+                            <label class="category">Female</label>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="submission"><button>SUBMIT</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
